@@ -1,0 +1,41 @@
+-- create table Doctors (
+-- doctor_id int,
+-- doctor_type varchar(30),
+-- doctor_name varchar(30),
+-- salary double,
+--  PRIMARY KEY (doctor_id));
+--  
+-- create table Patients  (
+-- Patient_id int ,
+-- Patient_name varchar(30),
+-- PRIMARY KEY (Patient_id));
+--  
+-- create table Appointment  (
+-- Appointment_id int,
+-- Patient_id int,
+-- doctor_id int,
+-- Appointment_time datetime,
+-- PRIMARY KEY (Appointment_id),
+-- FOREIGN KEY (Patient_id) REFERENCES Patients(Patient_id),
+-- FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id));
+
+-- -- create table Appointment  (
+-- -- Appointment_id int,
+-- -- Patient_id int,
+-- -- doctor_id int,
+-- -- Appointment_time time,
+-- -- Appointment_date date,
+-- -- PRIMARY KEY (Appointment_id),
+-- -- FOREIGN KEY (Patient_id) REFERENCES Patients(Patient_id),
+-- -- FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id));
+
+-- create table Queue   (
+-- Appointment_id int,
+-- actual_time datetime,
+-- PRIMARY KEY (Appointment_id));
+
+-- create table Queue_Summary   (
+-- date_ datetime,
+-- doctor_id int,
+-- num_of_Patient int,
+-- PRIMARY KEY (date_,doctor_id));
